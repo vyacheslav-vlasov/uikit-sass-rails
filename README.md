@@ -41,13 +41,13 @@ Append the following line to your `app/assets/javascripts/application.js` file:
 ```
 
 ### Change UIkit Theme
-If you want to use an other UIkit theme, just change the line in your `app/assets/stylesheets/application.css` file:
+If you don't want to use the default UIkit theme, just change the uikit line in your `app/assets/stylesheets/application.css` file:
 ```css
-@import "uikit/gradient";
+/*= require uikit/gradient */
 ```
 or
 ```css
-@import "uikit/almost-flat";
+/*= require uikit/almost-flat */
 ```
 
 ## Components
