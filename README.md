@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/uikit-sass-rails.png)](http://badge.fury.io/rb/uikit-sass-rails)
 
-Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your upcoming Rails project. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
+Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your Rails project. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
 
 ## Installation
 
@@ -21,8 +21,6 @@ Or install it yourself as::
 $ [sudo|rvm] gem install uikit-sass-rails
 ```
 
-## Usage
-
 ### Add UIkit to your CSS
 
 Append the following line to your `app/assets/stylesheets/application.css` file:
@@ -37,17 +35,18 @@ If you're planning on using Sass, then you'll want to rename `application.css` t
 
 ### Add UIkit to your JS
 
-Append the following lines to your `app/assets/javascripts/application.js` file:
+Append the following line to your `app/assets/javascripts/application.js` file:
 ```javascript
 //= require uikit
 ```
 
+## Components
+* [UIkit](http://www.getuikit.com) is created by [YOOtheme](http://www.yootheme.com) and licensed under the [MIT license](http://opensource.org/licenses/MIT).
+* The [Font Awesome](http://fontawesome.io) font, which is used by UIkit, is created by Dave Gandy and licensed under the [SIL OFL 1.1](http://scripts.sil.org/OFL).
 
-## Copyright
 
-
-## License
-Released under the [European Union Public Licence V. 1.1](http://opensource.org/licenses/EUPL-1.1).
+## Copyright and license
+Copyright 2014 MarSec under the [European Union Public Licence V. 1.1](http://opensource.org/licenses/EUPL-1.1).
 
 ## Contributing
 1. Fork it
