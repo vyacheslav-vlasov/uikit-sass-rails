@@ -1,6 +1,6 @@
 # Uikit::Sass:Rails
 
-[![Gem Version](https://badge.fury.io/rb/uikit-sass-rails.png)](http://badge.fury.io/rb/uikit-sass-rails)
+[![Gem Version](https://badge.fury.io/rb/uikit-sass-rails.svg)](http://badge.fury.io/rb/uikit-sass-rails)
 
 Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your Rails project. It is written in Sass and compatible with the asset pipeline in Rails. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
 
