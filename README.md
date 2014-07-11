@@ -1,6 +1,6 @@
 # Uikit::Sass:Rails
 
-[![Gem Version](https://badge.fury.io/rb/darian_calendar.png)](http://badge.fury.io/rb/darian_calendar)
+[![Gem Version](https://badge.fury.io/rb/uikit-sass-rails.png)](http://badge.fury.io/rb/uikit-sass-rails)
 
 Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your upcoming Rails project. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
 
@@ -13,12 +13,12 @@ gem "uikit-sass-rails"
 
 And then execute:
 ```bash
-bundle
+$ bundle
 ```
 
 Or install it yourself as::
 ```bash
-[sudo|rvm] gem install uikit-sass-rails
+$ [sudo|rvm] gem install uikit-sass-rails
 ```
 
 ## Usage
@@ -48,3 +48,10 @@ Append the following lines to your `app/assets/javascripts/application.js` file:
 
 ## License
 Released under the [European Union Public Licence V. 1.1](http://opensource.org/licenses/EUPL-1.1).
+
+## Contributing
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
