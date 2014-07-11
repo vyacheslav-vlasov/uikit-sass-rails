@@ -5,7 +5,7 @@ require 'uikit/sass/rails/version'
 
 
 Gem::Specification.new do |gem|
-  gem.name        = 'Uikit::Sass::Rails'
+  gem.name        = 'uikit-sass-rails'
   gem.version     = Uikit::Sass::Rails::VERSION
   gem.date        = Time.now.strftime('%Y-%m-%d')
   gem.summary     = 'UIkit on Sass for Rails'
@@ -20,9 +20,5 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($/)
   gem.extra_rdoc_files = ['README.md', 'LICENSE.md', 'CHANGELOG.md']
 
-  gem.add_development_dependency 'bundler', '~> 1.3'
-  gem.add_development_dependency 'rake'
-  gem.spec.add_development_dependency 'sass-rails'
-
-  gem.add_runtime_dependency 'sass', '~> 3.2'
+  gem.add_runtime_dependency 'sass-rails', '>= 3.1.1'
 end
