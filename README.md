@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/uikit-sass-rails.png)](http://badge.fury.io/rb/uikit-sass-rails)
 
-Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your Rails project. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
+Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your Rails project. It is written in Sass and is  compatible with the asset pipeline in Rails. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
 
 ## Installation
 
@@ -40,6 +40,15 @@ Append the following line to your `app/assets/javascripts/application.js` file:
 //= require uikit
 ```
 
+### Change UIkit Theme
+If you want to use a different UIkit theme, just change the line in your `app/assets/stylesheets/application.css` file:
+```css
+@import "uikit/gradient";
+```
+```css
+@import "uikit/almost-flat";
+```
+
 ## Components
 * [UIkit](http://www.getuikit.com) is created by [YOOtheme](http://www.yootheme.com) and licensed under the [MIT license](http://opensource.org/licenses/MIT).
 * The [Font Awesome](http://fontawesome.io) font, which is used by UIkit, is created by [Dave Gandy](https://github.com/davegandy) and licensed under the [SIL OFL 1.1](http://scripts.sil.org/OFL).
@@ -47,6 +56,20 @@ Append the following line to your `app/assets/javascripts/application.js` file:
 
 ## Copyright and license
 Copyright 2014 [Christian Worreschk](https://github.com/cworreschk), MarSec under the [European Union Public Licence V. 1.1](http://opensource.org/licenses/EUPL-1.1).
+
+##Versioning
+
+Uikit::Sass::Rails will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions, including new icons, without breaking backward compatibility bumps the minor (and resets the patch)
+* Bug fixes and misc changes bumps the patch
+
+For more information on SemVer, please visit http://semver.org.
 
 ## Contributing
 1. Fork it
