@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($/)
   gem.extra_rdoc_files = ['README.md', 'LICENSE.md', 'CHANGELOG.md']
 
-  gem.add_runtime_dependency 'sass-rails', '>= 3.1'
+  gem.add_runtime_dependency 'sass-rails', '~> 3.1'
 end
