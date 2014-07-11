@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.summary     = 'UIkit on Sass for Rails'
   gem.description = 'Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your Rails project.'
 
-  gem.authors  = ['MarSec']
+  gem.authors  = ['Christian Worreschk']
   gem.email    = ['info@marsec.de']
   gem.homepage = 'http://github.com/marsec/uikit-sass-rails'
   gem.licenses  = ['EUPL-1.1']
