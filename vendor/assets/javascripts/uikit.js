@@ -1,5 +1,6 @@
 //= require uikit/uikit
 
+//= require uikit/addons/cover
 //= require uikit/addons/datepicker
 //= require uikit/addons/form-password
 //= require uikit/addons/form-select
