@@ -1,3 +1,7 @@
+## 1.2.0
+- UIkit 2.10.0
+- Bugfix: Autocomplete
+
 ## 1.1.0
 - UIkit 2.9.0
 - Dependency Bugfix for Sass-Rails
