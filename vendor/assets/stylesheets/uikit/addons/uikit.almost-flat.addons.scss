@@ -1,4 +1,4 @@
-/*! UIkit 2.9.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/*! UIkit 2.10.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 
 /* ========================================================================
    Component: Dotnav
@@ -1182,39 +1182,49 @@ a.uk-datepicker-table-muted {
 /* Sub-object `uk-search-field`
  ========================================================================== */
 /*
- * 1. Needed to reset iOS `input[type="search"]` appearance
+ * Removes inner padding and border in Firefox 4+.
  */
 
 .uk-search-field {
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  &::-ms-clear {
+    display: none;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+  /* 1 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  border-radius: 0;
+  /* 4 */
+  font: inherit;
+  color: #444444;
+  /* 5 */
+  -webkit-appearance: none;
+  /* 6 */
   width: 120px;
   height: 30px;
   padding: 0 0 0 30px;
   border: 1px solid rgba(0, 0, 0, 0);
   background: rgba(0, 0, 0, 0);
-  color: #444444;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  /* 1 */
-  border-radius: 0;
-}
-
-/*
- * Needed to reset iOS `input[type="search"]` appearance
- * Higher specificity to override appearance set by normalize.less
- */
-
-input.uk-search-field {
-  -webkit-appearance: none;
-}
-
-/* Placeholder */
-
-.uk-search-field {
-  &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
-    color: #999999;
+  vertical-align: middle;
+  &:-ms-input-placeholder {
+    color: #999999 !important;
   }
-  &::-ms-clear {
-    display: none;
+  &::-moz-placeholder, &::-webkit-input-placeholder {
+    color: #999999;
   }
   &:focus {
     outline: 0;
@@ -1222,11 +1232,32 @@ input.uk-search-field {
   }
 }
 
-/* Removes cancel button in IE10 */
+/*
+ * Remove inner padding and search cancel button in Chrome, Safari and Opera on OS X.
+ */
+
+/*
+ * Removes cancel button in IE10
+ */
+
+/*
+ * Removes placeholder transparency in Firefox.
+ */
+
+/*
+ * 1. Define consistent box sizing.
+ * 2. Address margins set differently in Firefox/IE and Chrome/Safari/Opera.
+ * 3. Remove `border-radius` in iOS.
+ * 4. Correct `font` properties and `color` not being inherited.
+ * 5. Remove default style in iOS.
+ * 6. Style
+ */
+
+/* Placeholder */
 
 /* Focus */
 
-/* Focus + active */
+/* Focus + Active */
 
 .uk-search.uk-active .uk-search-field {
   width: 180px;
@@ -1323,7 +1354,10 @@ input.uk-search-field {
     border-color: rgba(0, 0, 0, 0);
     background: #1a1a1a;
     color: #cccccc;
-    &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-ms-input-placeholder {
+      color: #777777 !important;
+    }
+    &::-moz-placeholder, &::-webkit-input-placeholder {
       color: #777777;
     }
   }
