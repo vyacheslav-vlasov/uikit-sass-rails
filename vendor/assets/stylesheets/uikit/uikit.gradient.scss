@@ -1,5 +1,4 @@
-/*! UIkit 2.10.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
-
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -18,8 +17,8 @@ html {
   /* 3 */
   background: #ffffff;
   color: #444444;
-  background-image: -webkit-radial-gradient(100% 100%, center, #ffffff, #ffffff);
-  background-image: radial-gradient(100% 100% at center, #ffffff, #ffffff);
+  background-image: -webkit-radial-gradient(100% 100%, center, white, white);
+  background-image: radial-gradient(100% 100% at center, white, white);
 }
 
 /*
@@ -1586,7 +1585,7 @@ ul.uk-nav-sub {
         /* 2 */
         outline: none;
         box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
-        text-shadow: 0 -1px 0 #ffffff;
+        text-shadow: 0 -1px 0 white;
       }
     }
     &.uk-active > a {
@@ -1847,8 +1846,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-bottom-color: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   background-origin: border-box;
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  background-image: -webkit-linear-gradient(top, white, #eeeeee);
+  background-image: linear-gradient(to bottom, white, #eeeeee);
   &:before {
     content: " ";
     display: table;
@@ -2346,8 +2345,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
           border: 1px solid rgba(0, 0, 0, 0.2);
           border-bottom-color: rgba(0, 0, 0, 0.3);
           background-origin: border-box;
-          background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-          background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+          background-image: -webkit-linear-gradient(top, white, #eeeeee);
+          background-image: linear-gradient(to bottom, white, #eeeeee);
           text-shadow: 0 1px 0 #ffffff;
           &:hover, &:focus {
             background-color: #fafafa;
@@ -3340,7 +3339,7 @@ input {
 .uk-form-danger {
   border-color: #dc8d99 !important;
   background: #fff7f8 !important;
-  color: #c91032 !important;
+  color: #d85030 !important;
 }
 
 /*
@@ -3350,7 +3349,7 @@ input {
 .uk-form-success {
   border-color: #8ec73b !important;
   background: #fafff2 !important;
-  color: #539022 !important;
+  color: #659f13 !important;
 }
 
 /* Style modifiers
@@ -3593,8 +3592,8 @@ select.uk-form-width-mini {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom-color: rgba(0, 0, 0, 0.3);
   background-origin: border-box;
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  background-image: -webkit-linear-gradient(top, white, #eeeeee);
+  background-image: linear-gradient(to bottom, white, #eeeeee);
   border-radius: 4px;
   text-shadow: 0 1px 0 #ffffff;
   &:not(:disabled) {
@@ -3961,8 +3960,8 @@ select.uk-form-width-mini {
   border: 1px solid #cccccc;
   border-bottom-color: #bbbbbb;
   background-origin: border-box;
-  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  background-image: -webkit-linear-gradient(top, white, #eeeeee);
+  background-image: linear-gradient(to bottom, white, #eeeeee);
   text-shadow: 0 1px 0 #ffffff;
   &:hover, &:focus {
     background-color: #fafafa;
