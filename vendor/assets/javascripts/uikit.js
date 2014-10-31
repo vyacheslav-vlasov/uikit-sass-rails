@@ -1,2 +1,16 @@
 //= require uikit/uikit
-//= require_tree uikit/components
+
+//= require 'uikit/components/autocomplete'
+//= require 'uikit/components/cover'
+//= require 'uikit/components/datepicker'
+//= require 'uikit/components/form-password'
+//= require 'uikit/components/form-select'
+//= require 'uikit/components/htmleditor'
+//= require 'uikit/components/nestable'
+//= require 'uikit/components/notify'
+//= require 'uikit/components/pagination'
+//= require 'uikit/components/search'
+//= require 'uikit/components/sortable'
+//= require 'uikit/components/sticky'
+//= require 'uikit/components/timepicker'
+//= require 'uikit/components/upload'
