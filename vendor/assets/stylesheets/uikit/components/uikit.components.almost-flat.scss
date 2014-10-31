@@ -1,419 +1,4 @@
-/*! UIkit 2.10.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
-
-/* ========================================================================
-   Component: Dotnav
- ========================================================================== */
-/*
- * 1. Remove default list style
- * 2. Remove whitespace between child elements when using `inline-block`
- */
-
-.uk-dotnav {
-  /* 1 */
-  padding: 0;
-  list-style: none;
-  /* 2 */
-  font-size: 0.001px;
-  > li {
-    display: inline-block;
-    /* 1 */
-    font-size: 1rem;
-    /* 2 */
-    vertical-align: top;
-    &:nth-child(n+2) {
-      margin-left: 15px;
-    }
-    > a {
-      display: inline-block;
-      -moz-box-sizing: content-box;
-      box-sizing: content-box;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgba(50, 50, 50, 0.1);
-      /* 1 */
-      vertical-align: top;
-      /* 2 */
-      overflow: hidden;
-      text-indent: -999%;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      &:hover, &:focus {
-        background: rgba(50, 50, 50, 0.4);
-        /* 2 */
-        outline: none;
-      }
-      &:active {
-        background: rgba(50, 50, 50, 0.6);
-      }
-    }
-    &.uk-active > a {
-      background: rgba(50, 50, 50, 0.4);
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-  }
-}
-
-/* Items
- ========================================================================== */
-/*
- * 1. Reset whitespace hack
- * 2. Remove the gap at the bottom of it container
- */
-
-/*
- * Items
- * 1. Remove the gap at the bottom of it container
- * 2. Hide text if present
- */
-
-/*
- * Hover
- * 1. Apply hover style also to focus state
- * 2. Remove default focus style
- */
-
-/* OnClick */
-
-/* Active */
-
-/* Modifier: 'dotnav-vertical'
- ========================================================================== */
-
-.uk-dotnav-vertical > li {
-  display: block;
-  &:nth-child(n+2) {
-    margin-left: 0;
-    margin-top: 15px;
-  }
-}
-
-/* ========================================================================
-   Component: Slidenav
- ========================================================================== */
-/*
- * 1. Required for `a` elements
- * 2. Dimension
- * 3. Style
- */
-
-.uk-slidenav {
-  /* 1 */
-  display: inline-block;
-  /* 2 */
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  /* 3 */
-  line-height: 60px;
-  color: rgba(50, 50, 50, 0.4);
-  font-size: 60px;
-  text-align: center;
-  &:hover, &:focus {
-    /* 2 */
-    outline: none;
-    /* 3 */
-    text-decoration: none;
-    /* 4 */
-    color: rgba(50, 50, 50, 0.7);
-    cursor: pointer;
-  }
-  &:active {
-    color: rgba(50, 50, 50, 0.9);
-  }
-}
-
-/*
- * Hover
- * 1. Apply hover style also to focus state
- * 2. Remove default focus style
- * 3. Required for `a` elements
- * 4. Style
- */
-
-/* Active */
-
-/*
- * Icons
- */
-
-.uk-slidenav-previous:before {
-  content: "\f104";
-  font-family: FontAwesome;
-}
-
-.uk-slidenav-next:before {
-  content: "\f105";
-  font-family: FontAwesome;
-}
-
-/* Sub-object: `uk-slidenav-position`
- ========================================================================== */
-/*
- * 1. Container width fits its content
- * 2. Create position context
- * 3. Prevent `inline-block` consequences
- * 4. Corrects `max-width` behavior if padding and border are used
- */
-
-.uk-slidenav-position {
-  /* 1 */
-  display: inline-block;
-  /* 2 */
-  position: relative;
-  /* 3 */
-  max-width: 100%;
-  /* 4 */
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  .uk-slidenav {
-    display: none;
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-  }
-  &:hover .uk-slidenav {
-    display: block;
-  }
-  .uk-slidenav-previous {
-    left: 20px;
-  }
-  .uk-slidenav-next {
-    right: 20px;
-  }
-}
-
-/*
- * Center vertically
- */
-
-/* ========================================================================
-   Component: Form advanced
-   Note: Only works in Webkit at the moment
- ========================================================================== */
-/*
- * 1. Style
- * 2. Makes box more robust so it clips the child element
- * 3. Vertical alignment
- * 4. Remove default style
- * 5. Fix black background on iOS
- */
-
-.uk-form input {
-  &[type="radio"], &[type="checkbox"] {
-    /* 1 */
-    display: inline-block;
-    height: 14px;
-    width: 14px;
-    border: 1px solid #aaaaaa;
-    /* 2 */
-    overflow: hidden;
-    /* 3 */
-    margin-top: -4px;
-    vertical-align: middle;
-    /* 4 */
-    -webkit-appearance: none;
-    outline: 0;
-    /* 5 */
-    background: transparent;
-  }
-  &[type="radio"] {
-    border-radius: 50%;
-  }
-  &[type=checkbox]:checked:before {
-    display: block;
-  }
-  &[type=radio]:checked:before {
-    display: block;
-    content: '';
-    width: 8px;
-    height: 8px;
-    margin: 2px auto 0;
-    border-radius: 50%;
-    background: #00a8e6;
-  }
-  &[type=checkbox]:checked:before {
-    content: "\f00c";
-    font-family: FontAwesome;
-    font-size: 12px;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    line-height: 12px;
-    color: #00a8e6;
-  }
-  &[type=radio]:disabled, &[type=checkbox]:disabled {
-    border-color: #dddddd;
-  }
-  &[type=radio]:disabled:checked:before {
-    background-color: #aaaaaa;
-  }
-  &[type=checkbox]:disabled:checked:before {
-    color: #aaaaaa;
-  }
-}
-
-/* Radio */
-
-/*
- * Checked
- */
-
-/* Radio */
-
-/* Checkbox */
-
-/*
- * Disabled
- */
-
-/* ========================================================================
-   Component: Form file
- ========================================================================== */
-/*
- * 1. Behave like form elements
- * 2. Create position context for dropdowns
- * 3. Clip content
- */
-
-.uk-form-file {
-  /* 1 */
-  display: inline-block;
-  vertical-align: middle;
-  /* 2 */
-  position: relative;
-  /* 3 */
-  overflow: hidden;
-  input[type="file"] {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    opacity: 0;
-    cursor: pointer;
-    /* 1 */
-    left: 0;
-    /* 2 */
-    font-size: 500px;
-  }
-}
-
-/*
- * 1. Required for Firefox
- * 2. Expand height and required for the cursor
- */
-
-/* ========================================================================
-   Component: Form password
- ========================================================================== */
-/*
- * 1. Container width fits its content
- * 2. Create position context
- * 3. Prevent `inline-block` consequences
- */
-
-.uk-form-password {
-  /* 1 */
-  display: inline-block;
-  /* 2 */
-  position: relative;
-  /* 3 */
-  max-width: 100%;
-}
-
-.uk-form-password-toggle {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  margin-top: -6px;
-  font-size: 13px;
-  line-height: 13px;
-  color: #999999;
-  &:hover {
-    color: #999999;
-    text-decoration: none;
-  }
-}
-
-.uk-form-password > input {
-  padding-right: 50px !important;
-}
-
-/* ========================================================================
-   Component: Form select
- ========================================================================== */
-/*
- * 1. Behave like form elements
- * 2. Create position context for dropdowns
- * 3. Clip content
- */
-
-.uk-form-select {
-  /* 1 */
-  display: inline-block;
-  vertical-align: middle;
-  /* 2 */
-  position: relative;
-  /* 3 */
-  overflow: hidden;
-  select {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-    /* 1 */
-    left: 0;
-    /* 2 */
-    -webkit-appearance: none;
-  }
-}
-
-/*
- * 1. Required for Firefox
- * 1. Required for Webkit to make `height` work
- */
-
-/* ========================================================================
-   Component: Placeholder
- ========================================================================== */
-
-.uk-placeholder {
-  margin-bottom: 15px;
-  padding: 20px;
-  border: 1px dashed #dddddd;
-  background: #fafafa;
-  color: #444444;
-}
-
-/*
- * Add margin if adjacent element
- */
-
-* + .uk-placeholder {
-  margin-top: 15px;
-}
-
-/*
- * Remove margin from the last-child
- */
-
-.uk-placeholder > :last-child {
-  margin-bottom: 0;
-}
-
-/* Modifier: `uk-placeholder-large`
- ========================================================================== */
-
-.uk-placeholder-large {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Autocomplete
  ========================================================================== */
@@ -476,6 +61,62 @@
  * Sub-object: `uk-nav-divider`
  */
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Cover
+ ========================================================================== */
+/*
+ * Background image always covers and centers its element
+ */
+
+.uk-cover-background {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*
+ * Emulates image cover, works with video and image elements
+ * 1. Parent container which clips resized object
+ * 2. Resizes the object to always covers its container
+ * 3. Reset the responsive image CSS
+ * 4. Center object
+ */
+/* 1 */
+
+.uk-cover {
+  overflow: hidden;
+}
+
+.uk-cover-object {
+  /* 2 */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  /* 3 */
+  max-width: none;
+  /* 4 */
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*
+ * To center iframes use `data-uk-cover` JavaScript
+ */
+
+[data-uk-cover] {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Datepicker
  ========================================================================== */
@@ -621,6 +262,343 @@ a.uk-datepicker-table-muted {
  * Active
  */
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Dotnav
+ ========================================================================== */
+/*
+ * 1. Remove default list style
+ * 2. Remove whitespace between child elements when using `inline-block`
+ */
+
+.uk-dotnav {
+  /* 1 */
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  font-size: 0.001px;
+  > li {
+    display: inline-block;
+    /* 1 */
+    font-size: 1rem;
+    /* 2 */
+    vertical-align: top;
+    &:nth-child(n+2) {
+      margin-left: 15px;
+    }
+    > a {
+      display: inline-block;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(50, 50, 50, 0.1);
+      /* 1 */
+      vertical-align: top;
+      /* 2 */
+      overflow: hidden;
+      text-indent: -999%;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      &:hover, &:focus {
+        background: rgba(50, 50, 50, 0.4);
+        /* 2 */
+        outline: none;
+      }
+      &:active {
+        background: rgba(50, 50, 50, 0.6);
+      }
+    }
+    &.uk-active > a {
+      background: rgba(50, 50, 50, 0.4);
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  }
+}
+
+/* Items
+ ========================================================================== */
+/*
+ * 1. Reset whitespace hack
+ * 2. Remove the gap at the bottom of it container
+ */
+
+/*
+ * Items
+ * 1. Remove the gap at the bottom of it container
+ * 2. Hide text if present
+ */
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+
+/* OnClick */
+
+/* Active */
+
+/* Modifier: 'dotnav-vertical'
+ ========================================================================== */
+
+.uk-dotnav-vertical > li {
+  display: block;
+  &:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Flex
+ ========================================================================== */
+
+.uk-flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Alignment
+ ========================================================================== */
+/*
+ * Vertical alignment
+ * Default value is `stretch`
+ */
+
+.uk-flex-top {
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.uk-flex-middle {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.uk-flex-bottom {
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+/*
+ * Horizontal alignment
+ * Default value is `flex-start`
+ */
+
+.uk-flex-center {
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.uk-flex-right {
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Form advanced
+   Note: Only works in Webkit at the moment
+ ========================================================================== */
+/*
+ * 1. Style
+ * 2. Makes box more robust so it clips the child element
+ * 3. Vertical alignment
+ * 4. Remove default style
+ * 5. Fix black background on iOS
+ */
+
+.uk-form input {
+  &[type="radio"], &[type="checkbox"] {
+    /* 1 */
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #aaaaaa;
+    /* 2 */
+    overflow: hidden;
+    /* 3 */
+    margin-top: -4px;
+    vertical-align: middle;
+    /* 4 */
+    -webkit-appearance: none;
+    outline: 0;
+    /* 5 */
+    background: transparent;
+  }
+  &[type="radio"] {
+    border-radius: 50%;
+  }
+  &[type=checkbox]:checked:before {
+    display: block;
+  }
+  &[type=radio]:checked:before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin: 2px auto 0;
+    border-radius: 50%;
+    background: #00a8e6;
+  }
+  &[type=checkbox]:checked:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    line-height: 12px;
+    color: #00a8e6;
+  }
+  &[type=radio]:disabled, &[type=checkbox]:disabled {
+    border-color: #dddddd;
+  }
+  &[type=radio]:disabled:checked:before {
+    background-color: #aaaaaa;
+  }
+  &[type=checkbox]:disabled:checked:before {
+    color: #aaaaaa;
+  }
+}
+
+/* Radio */
+
+/*
+ * Checked
+ */
+
+/* Radio */
+
+/* Checkbox */
+
+/*
+ * Disabled
+ */
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Form file
+ ========================================================================== */
+/*
+ * 1. Behave like form elements
+ * 2. Create position context for dropdowns
+ * 3. Clip content
+ */
+
+.uk-form-file {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  overflow: hidden;
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    /* 1 */
+    left: 0;
+    /* 2 */
+    font-size: 500px;
+  }
+}
+
+/*
+ * 1. Required for Firefox
+ * 2. Expand height and required for the cursor
+ */
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Form password
+ ========================================================================== */
+/*
+ * 1. Container width fits its content
+ * 2. Create position context
+ * 3. Prevent `inline-block` consequences
+ */
+
+.uk-form-password {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+}
+
+.uk-form-password-toggle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -6px;
+  font-size: 13px;
+  line-height: 13px;
+  color: #999999;
+  &:hover {
+    color: #999999;
+    text-decoration: none;
+  }
+}
+
+.uk-form-password > input {
+  padding-right: 50px !important;
+}
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Form select
+ ========================================================================== */
+/*
+ * 1. Behave like form elements
+ * 2. Create position context for dropdowns
+ * 3. Clip content
+ */
+
+.uk-form-select {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  overflow: hidden;
+  select {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    /* 1 */
+    left: 0;
+    /* 2 */
+    -webkit-appearance: none;
+  }
+}
+
+/*
+ * 1. Required for Firefox
+ * 1. Required for Webkit to make `height` work
+ */
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: HTML editor
  ========================================================================== */
@@ -903,6 +881,7 @@ a.uk-datepicker-table-muted {
   }
 }
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Nestable
  ========================================================================== */
@@ -1035,6 +1014,7 @@ a.uk-datepicker-table-muted {
   }
 }
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Notify
  ========================================================================== */
@@ -1147,6 +1127,44 @@ a.uk-datepicker-table-muted {
   border-color: rgba(216, 80, 48, 0.3);
 }
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Placeholder
+ ========================================================================== */
+
+.uk-placeholder {
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px dashed #dddddd;
+  background: #fafafa;
+  color: #444444;
+}
+
+/*
+ * Add margin if adjacent element
+ */
+
+* + .uk-placeholder {
+  margin-top: 15px;
+}
+
+/*
+ * Remove margin from the last-child
+ */
+
+.uk-placeholder > :last-child {
+  margin-bottom: 0;
+}
+
+/* Modifier: `uk-placeholder-large`
+ ========================================================================== */
+
+.uk-placeholder-large {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Search
  ========================================================================== */
@@ -1363,6 +1381,108 @@ a.uk-datepicker-table-muted {
   }
 }
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Slidenav
+ ========================================================================== */
+/*
+ * 1. Required for `a` elements
+ * 2. Dimension
+ * 3. Style
+ */
+
+.uk-slidenav {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  /* 3 */
+  line-height: 60px;
+  color: rgba(50, 50, 50, 0.4);
+  font-size: 60px;
+  text-align: center;
+  &:hover, &:focus {
+    /* 2 */
+    outline: none;
+    /* 3 */
+    text-decoration: none;
+    /* 4 */
+    color: rgba(50, 50, 50, 0.7);
+    cursor: pointer;
+  }
+  &:active {
+    color: rgba(50, 50, 50, 0.9);
+  }
+}
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ * 3. Required for `a` elements
+ * 4. Style
+ */
+
+/* Active */
+
+/*
+ * Icons
+ */
+
+.uk-slidenav-previous:before {
+  content: "\f104";
+  font-family: FontAwesome;
+}
+
+.uk-slidenav-next:before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+/* Sub-object: `uk-slidenav-position`
+ ========================================================================== */
+/*
+ * 1. Container width fits its content
+ * 2. Create position context
+ * 3. Prevent `inline-block` consequences
+ * 4. Corrects `max-width` behavior if padding and border are used
+ */
+
+.uk-slidenav-position {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+  /* 4 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .uk-slidenav {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+  }
+  &:hover .uk-slidenav {
+    display: block;
+  }
+  .uk-slidenav-previous {
+    left: 20px;
+  }
+  .uk-slidenav-next {
+    right: 20px;
+  }
+}
+
+/*
+ * Center vertically
+ */
+
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Sortable
  ========================================================================== */
@@ -1424,6 +1544,7 @@ a.uk-datepicker-table-muted {
   }
 }
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Sticky
  ========================================================================== */
@@ -1452,6 +1573,7 @@ a.uk-datepicker-table-muted {
  * Faster animations
  */
 
+/*! UIkit 2.11.1 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
 /* ========================================================================
    Component: Upload
  ========================================================================== */
@@ -1461,110 +1583,4 @@ a.uk-datepicker-table-muted {
 
 .uk-dragover {
   box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
-}
-
-/* ========================================================================
-   Component: Flex
- ========================================================================== */
-
-.uk-flex {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Alignment
- ========================================================================== */
-/*
- * Vertical alignment
- * Default value is `stretch`
- */
-
-.uk-flex-top {
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-}
-
-.uk-flex-middle {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.uk-flex-bottom {
-  -ms-flex-align: end;
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-}
-
-/*
- * Horizontal alignment
- * Default value is `flex-start`
- */
-
-.uk-flex-center {
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.uk-flex-right {
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
-/* ========================================================================
-   Component: Cover
- ========================================================================== */
-/*
- * Background image always covers and centers its element
- */
-
-.uk-cover-background {
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/*
- * Emulates image cover, works with video and image elements
- * 1. Parent container which clips resized object
- * 2. Resizes the object to always covers its container
- * 3. Reset the responsive image CSS
- * 4. Center object
- */
-/* 1 */
-
-.uk-cover {
-  overflow: hidden;
-}
-
-.uk-cover-object {
-  /* 2 */
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  /* 3 */
-  max-width: none;
-  /* 4 */
-  position: relative;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/*
- * To center iframes use `data-uk-cover` JavaScript
- */
-
-[data-uk-cover] {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
