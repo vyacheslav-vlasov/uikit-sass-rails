@@ -57,7 +57,7 @@ In your `app/assets/stylesheets/application.scss` file just replace the uikit li
 ```
 
 ## Copyright and license
-Copyright 2014 MarSec under the [European Union Public Licence V. 1.1](http://opensource.org/licenses/EUPL-1.1).
+Copyright 2014 Christian Worreschk under the [European Union Public Licence V. 1.1](http://opensource.org/licenses/EUPL-1.1).
 
 * [UIkit](http://www.getuikit.com) is created by [YOOtheme](http://www.yootheme.com) and licensed under the [MIT license](http://opensource.org/licenses/MIT).
 * The [Font Awesome](http://fontawesome.io) font, which is used by UIkit, is created by [Dave Gandy](https://github.com/davegandy) and licensed under the [SIL OFL 1.1](http://scripts.sil.org/OFL).
@@ -77,8 +77,6 @@ And constructed with the following guidelines:
 For more information on SemVer, please visit http://semver.org.
 
 ## Contributing
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Uikit::Sass:Rails follows the [GitFlow branching model](http://nvie.com/posts/a-successful-git-branching-model). The ```master``` branch always reflects a production-ready state while the latest development is taking place in the ```develop``` branch.
+
+Each time you want to work on a fix or a new feature, create a new branch based on the ```develop``` branch: ```git checkout -b BRANCH_NAME develop```. Only pull requests to the ```develop``` branch will be merged.
