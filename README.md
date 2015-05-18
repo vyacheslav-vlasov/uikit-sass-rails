@@ -1,6 +1,6 @@
 # Uikit::Sass:Rails
 
-[![Gem: Version 1.3](https://img.shields.io/gem/v/uikit-sass-rails.svg?style=flat-square)](https://rubygems.org/gems/uikit-sass-rails)
+[![Gem: Version 1.4](https://img.shields.io/gem/v/uikit-sass-rails.svg?style=flat-square)](https://rubygems.org/gems/uikit-sass-rails)
 [![License: EUPL-1.1](https://img.shields.io/badge/license-EUPL--1.1-red.svg?style=flat-square)](https://github.com/marsec/uikit-sass-rails/blob/master/LICENSE.md)
 
 Uikit::Sass:Rails is a gem to make it super easy to use UIkit in your Rails project. It is written in Sass and compatible with the asset pipeline in Rails. You can start using Uikit::Sass:Rails in your projects by following the instructions below.
